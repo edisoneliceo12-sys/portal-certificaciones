@@ -2,14 +2,17 @@
   "name": "Portal Certificaciones 3A Core Materials",
   "short_name": "Cert 3A",
   "description": "Portal de certificaciones para registro de actas, encuestas y avistamientos",
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "/portal-certificaciones/index.html",
+  "scope": "/portal-certificaciones/",
   "display": "standalone",
   "orientation": "portrait-primary",
   "theme_color": "#1a2f5a",
   "background_color": "#f0f4f9",
   "lang": "es",
-  "categories": ["business", "productivity"],
+  "categories": [
+    "business",
+    "productivity"
+  ],
   "icons": [
     {
       "src": "data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 192 192'><rect width='192' height='192' rx='32' fill='%231a2f5a'/><text x='96' y='130' font-size='100' text-anchor='middle' fill='white' font-family='serif'>3A</text></svg>",
@@ -39,5 +42,6 @@
     }
   ],
   "screenshots": [],
-  "prefer_related_applications": false
+  "prefer_related_applications": false,
+  "id": "/portal-certificaciones/"
 }

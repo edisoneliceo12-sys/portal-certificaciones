@@ -5,7 +5,7 @@ var CDN_HOSTS = ['fonts.googleapis.com','fonts.gstatic.com','cdnjs.cloudflare.co
 self.addEventListener('install', function(e) {
   e.waitUntil(
     caches.open(CACHE_NAME).then(function(cache) {
-      return cache.addAll(['/', '/index.html']);
+      return cache.addAll(['/portal-certificaciones/', '/portal-certificaciones/index.html']);
     }).then(function() { return self.skipWaiting(); })
   );
 });
@@ -51,7 +51,7 @@ self.addEventListener('fetch', function(e) {
         if (r.ok) { var c=r.clone(); caches.open(CACHE_NAME).then(function(cache){ cache.put(e.request,c); }); }
         return r;
       }).catch(function() {
-        return caches.open(CACHE_NAME).then(function(cache){ return cache.match('/index.html'); });
+        return caches.open(CACHE_NAME).then(function(cache){ return cache.match('/portal-certificaciones/index.html'); });
       })
     );
     return;
